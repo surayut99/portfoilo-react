@@ -1,0 +1,59 @@
+#skills {
+  background: url('../pictures/skills-bg.jpg');
+  height: 100vh;
+}
+
+.programming-lang {
+  display: flex;
+  align-items: center;
+}
+
+.programming-icon > * {
+  width: 60px;
+  height: 60px;
+}
+
+.programming-icon {
+  margin-right: 1rem;
+}
+
+#skills-container {
+  /* background-color: whitesmoke; */
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 1%;
+}
+
+#programming-skill {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 50px 5% 50px;
+  background-color: rgba(30, 30, 30, .6);
+  color: white;
+}
+
+#soft-skill {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 50px 5% 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-langs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10%;
+  grid-column-gap: 2%;
+  margin-top: 5%;
+}
+
+.icon-container-col-1 {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10%;
+  margin-top: 5%;
+}

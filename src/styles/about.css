@@ -1,0 +1,25 @@
+#about {
+  background: url("../pictures/about-bg.jpg");
+  height: 100vh;
+}
+
+.contact-item > a, h6 {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: wheat;
+}
+
+.icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  width: fit-content
+}
+
+#img-profile {
+  height: 30vh;
+  border-radius: 50%;
+}

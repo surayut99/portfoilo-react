@@ -1,0 +1,39 @@
+#nav-btn-container > a {
+  margin-left: 1rem;
+  width: 100px;
+  font-size: 24px;
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#user-name {
+  color: whitesmoke
+}
+
+nav {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0, .8);
+  backdrop-filter: blur(10px);
+  height: 60px;
+}
+
+
+#about-nav:hover, #about-header {
+  color: #ffbb00;
+  text-shadow: 0px 0px 20px #ffbb00;
+}
+
+#skills-nav:hover, #skills-header {
+  color: #ff3300;
+  text-shadow: 0px 0px 20px #ff3300;
+
+}
+
+#projects-nav:hover {
+  color: #ff00dd;
+  text-shadow: 0px 0px 20px #ff00dd;
+}
