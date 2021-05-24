@@ -2,14 +2,13 @@ import "../styles/skills.css";
 
 function ProgrammingIcon(props) {
   return (
-    <div class="programming-lang mb-2">
-      <div class="programming-icon">
+    <div className="programming-lang">
+      <div className="programming-icon">
         <img
           src={
-            require(`../pictures/icons/${props.lang.toLowerCase()}.png`).default
+            require(`../images/icons/${props.lang.toLowerCase()}.png`).default
           }
-          alt=""
-          srcset=""
+          alt={props.lang}
         />
       </div>
       <h5>{props.lang}</h5>

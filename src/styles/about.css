@@ -1,12 +1,16 @@
 #about {
-  background: url("../pictures/about-bg.jpg");
+  background: url("../images/about-bg.jpg");
   height: 100vh;
 }
 
-.contact-item > a, h6 {
+.contact-item > * {
   margin-left: 1rem;
   text-decoration: none;
   color: wheat;
+}
+
+.contact-item > svg {
+  color: white;
 }
 
 .icon {

@@ -1,5 +1,5 @@
 import "../styles/about.css";
-import { FaEnvelope, FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 function About() {
@@ -37,18 +37,18 @@ function About() {
           className="d-flex justify-content-center flex-column"
         >
           <div className="contact-item d-flex align-items-center text-white">
-            <FaEnvelope class="icon" />
+            <FaEnvelope className="icon" />
             <h6>{profile.email}</h6>
           </div>
 
           <div className="contact-item d-flex align-items-center text-white">
-            <FaPhoneAlt class="icon" />
+            <FaPhoneAlt className="icon" />
             <h6>{profile.phone}</h6>
           </div>
 
           <div className="contact-item d-flex align-items-center text-white">
-            <AiFillGithub class="icon" />
-            <a href={git} target="_blank" className="h6">
+            <AiFillGithub className="icon" />
+            <a href={git} target="_blank" rel="noreferrer" className="h6">
               surayut99
             </a>
           </div>

@@ -1,37 +1,48 @@
-import { FaPython } from "react-icons/fa";
 import "../styles/skills.css";
+import LanguageStat from "./LanguageStat.js";
 import ProgrammingIcon from "./ProgrammingIcon.js";
+import Chart from "./Chart";
 
 function Skills() {
+  const codingLang = [
+    "Python",
+    "C",
+    "C++",
+    "Java",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+  ];
+  const frameworks = ["VueJS", "React", "Bootstrap", "Laravel"];
+  const databases = ["MySQL", "MongoDB"];
+
   return (
     <div id="skills">
       <div className="content-container">
-        <h1 id="skills-header">MY SKILLS</h1>
+        <h1 id="skills-header">SKILLS</h1>
         <div id="skills-container">
           <div id="programming-skill">
-            <h3 className="text-center">CODING SKILLS</h3>
             <div className="icon-langs">
-              <ProgrammingIcon lang="Python" />
-              <ProgrammingIcon lang="C" />
-              <ProgrammingIcon lang="C++" />
-              <ProgrammingIcon lang="Java" />
-              <ProgrammingIcon lang="JavaScript" />
-              <ProgrammingIcon lang="HTML" />
-              <ProgrammingIcon lang="VueJS" />
-              <ProgrammingIcon lang="Bootstrap" />
-              <ProgrammingIcon lang="Laravel" />
-              <ProgrammingIcon lang="React" />
+              {codingLang.map((item) => (
+                <ProgrammingIcon lang={item} />
+              ))}
+            </div>
+            <hr />
+            <div className="icon-langs">
+              {frameworks.map((item) => (
+                <ProgrammingIcon lang={item} />
+              ))}
+            </div>
+            <hr />
+            <div className="icon-langs">
+              {databases.map((item) => (
+                <ProgrammingIcon lang={item} />
+              ))}
             </div>
           </div>
-          <div id="soft-skill">
-            <h3 className="text-center">SOFT SKILLS</h3>
-            <div className="icon-container-col-1">
-              <h3>Fast Learner</h3>
-              <h3>Fast Learner</h3>
-              <h3>Fast Learner</h3>
-              <h3>Fast Learner</h3>
-              <h3>Fast Learner</h3>
-            </div>
+          <div id="graph-container">
+            <LanguageStat />
           </div>
         </div>
       </div>
