@@ -33,7 +33,7 @@ nav {
 
 }
 
-#projects-nav:hover {
+#projects-nav:hover, #projects-header {
   color: #ff00dd;
   text-shadow: 0px 0px 20px #ff00dd;
 }

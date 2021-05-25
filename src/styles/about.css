@@ -1,7 +1,6 @@
 #about {
   background: url("../images/about-bg.jpg");
-  height: 100vh;
-}
+  }
 
 .contact-item > * {
   margin-left: 1rem;
@@ -10,7 +9,7 @@
 }
 
 .contact-item > svg {
-  color: white;
+  color: rgb(255, 160, 52);
 }
 
 .icon {

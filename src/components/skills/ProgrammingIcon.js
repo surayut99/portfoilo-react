@@ -1,4 +1,4 @@
-import "../styles/skills.css";
+import "../../styles/skills.css";
 
 function ProgrammingIcon(props) {
   return (
@@ -6,7 +6,8 @@ function ProgrammingIcon(props) {
       <div className="programming-icon">
         <img
           src={
-            require(`../images/icons/${props.lang.toLowerCase()}.png`).default
+            require(`../../images/icons/${props.lang.toLowerCase()}.png`)
+              .default
           }
           alt={props.lang}
         />

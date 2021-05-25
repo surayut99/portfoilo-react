@@ -1,6 +1,6 @@
 #skills {
   background: url('../images/skills-bg.jpg');
-  min-height: 100vh;
+  background-position: 30% 30%;
 }
 
 .programming-lang {
@@ -24,6 +24,7 @@
   overflow: hidden;
   margin-top: 1rem;
   margin-bottom: 60px;
+  width: 80vw;
 }
 
 #programming-skill {

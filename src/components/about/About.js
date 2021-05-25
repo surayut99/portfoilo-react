@@ -1,4 +1,4 @@
-import "../styles/about.css";
+import "../../styles/about.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -18,7 +18,7 @@ function About() {
   return (
     <div id="about">
       <div className="content-container">
-        <h1 id="about-header">ABOUT ME</h1>
+        <h1 id="about-header">ABOUT</h1>
         <div
           id="img-profile-container"
           className="d-flex justify-content-center"

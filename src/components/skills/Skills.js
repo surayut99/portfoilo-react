@@ -1,7 +1,6 @@
-import "../styles/skills.css";
+import "../../styles/skills.css";
 import LanguageStat from "./LanguageStat.js";
 import ProgrammingIcon from "./ProgrammingIcon.js";
-import Chart from "./Chart";
 
 function Skills() {
   const codingLang = [

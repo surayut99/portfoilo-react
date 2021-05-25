@@ -1,6 +1,7 @@
-import About from "./components/About.js";
 import Nav from "./components/Nav";
-import Skills from "./components/Skills.js";
+import About from "./components/about/About.js";
+import Skills from "./components/skills/Skills.js";
+import Projects from "./components/projects/Projects.js";
 import "./styles/app.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

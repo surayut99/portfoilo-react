@@ -12,3 +12,7 @@ iframe {
   width: 100vw;
   min-height: 100vh;
 }
+
+#about, #skills, #projects {
+  min-width: 100vh
+}

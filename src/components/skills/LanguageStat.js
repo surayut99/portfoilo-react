@@ -1,16 +1,15 @@
-import { getRepos } from "../services/fetchRepo";
+import { getRepos } from "../../services/repo";
 import { useEffect, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 
 function LanguageStat() {
-  const user = "surayut99";
-  const [langStat, setLangStat] = useState(null);
   const [data, setData] = useState(null);
   const size = 400;
 
   useEffect(() => {
     getRepos()
       .then((result) => {
+        // filter repos per language
         let langStats = result
           .filter((repo) => {
             return repo.language;
@@ -26,7 +25,7 @@ function LanguageStat() {
         return langStats;
       })
       .then((result) => {
-        console.log(Object.keys(result), Object.values(result));
+        // setup data to visualize chart
         let data = {
           labels: Object.keys(result),
           datasets: [
@@ -51,6 +50,7 @@ function LanguageStat() {
 
   return (
     <div className="d-flex justify-content-center align-items-center flex-column w-100">
+      <h6 style={{ color: "black" }}>Repos Per Language</h6>
       <div className="w-100">
         <Doughnut
           data={data}
@@ -60,8 +60,6 @@ function LanguageStat() {
           color="white"
         />
       </div>
-      <br />
-      <h6 style={{ color: "black" }}>Repo Per Language</h6>
     </div>
   );
 }
