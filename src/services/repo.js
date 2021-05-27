@@ -1,6 +1,9 @@
 const Axios = require("axios");
 const { GIT_USERNAME } = require("../config");
 
+/**
+ * request for getting all repo from github.com of 'surayut99' user
+ */
 const getRepos = async () => {
   const res = await Axios.get(
     `https://api.github.com/users/${GIT_USERNAME}/repos`
@@ -9,6 +12,10 @@ const getRepos = async () => {
   return res.data;
 };
 
+/**
+ * request for README.md by given repo-name
+ * @param repoName repo-name to find README.md on github.com
+ */
 const getReadme = async (repoName) => {
   let isError = false;
   const res = await Axios.get(
@@ -21,4 +28,4 @@ const getReadme = async (repoName) => {
   return res.data;
 };
 
-module.exports = { getRepos, getReadme };
+export { getRepos, getReadme };

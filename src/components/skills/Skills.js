@@ -24,19 +24,19 @@ function Skills() {
           <div id="programming-skill">
             <div className="icon-langs">
               {codingLang.map((item) => (
-                <ProgrammingIcon lang={item} />
+                <ProgrammingIcon key={item} lang={item} />
               ))}
             </div>
             <hr />
             <div className="icon-langs">
               {frameworks.map((item) => (
-                <ProgrammingIcon lang={item} />
+                <ProgrammingIcon key={item} lang={item} />
               ))}
             </div>
             <hr />
             <div className="icon-langs">
               {databases.map((item) => (
-                <ProgrammingIcon lang={item} />
+                <ProgrammingIcon key={item} lang={item} />
               ))}
             </div>
           </div>

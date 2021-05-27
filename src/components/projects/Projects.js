@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { getRepos, getReadme } from "../../services/repo.js";
 import "../../styles/projects.css";
+import { useEffect, useState } from "react";
+import { getRepos, getReadme } from "../../services/repo";
 import Card from "./Card.js";
 
 function Projects() {
@@ -49,6 +49,7 @@ function Projects() {
               ? repos.map((repo, key) => {
                   return (
                     <a
+                      key={key}
                       id={key}
                       href="#projects"
                       className="project-name"

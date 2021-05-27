@@ -16,28 +16,49 @@
   display: flex;
   flex-direction: column;
   font-size: 24px;
-  background-color: aliceblue;
+  background-color:rgba(30, 30, 30, 0.6);
   padding: 1rem 0 1rem 0;
+  backdrop-filter: blur(10px);
 }
 
 .project-name {
   text-decoration: none;
-  color: black;
+  color: white;
   height: 3rem;
-  display: flex;
   align-items: center;
-  padding-left: 0.5rem;
+  padding:0 0.5rem 0 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 95%;
 }
 
 .project-name:hover {
   background-color: rgb(96, 181, 255);
-  padding-left: 1rem;
   color: black;
 }
 
 .project-card {
-  background-color: white;
+  background-color: whitesmoke;
   overflow-y: auto;
   padding: 1rem;
 }
 
+@media (max-width: 800px) {
+  #projects {
+    background-size: cover;
+  }
+
+  #projects-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  #projects-list {
+    overflow: auto;
+  }
+
+  .project-name {
+    overflow: unset;
+  }
+}

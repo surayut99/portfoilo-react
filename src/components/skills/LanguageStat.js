@@ -4,7 +4,6 @@ import { Doughnut } from "react-chartjs-2";
 
 function LanguageStat() {
   const [data, setData] = useState(null);
-  const size = 400;
 
   useEffect(() => {
     getRepos()
@@ -49,14 +48,12 @@ function LanguageStat() {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center align-items-center flex-column w-100">
+    <div className="d-flex justify-content-center align-items-center flex-column">
       <h6 style={{ color: "black" }}>Repos Per Language</h6>
-      <div className="w-100">
+      <div>
         <Doughnut
           data={data}
           options={{ maintainAspectRatio: false }}
-          width={size}
-          height={size}
           color="white"
         />
       </div>

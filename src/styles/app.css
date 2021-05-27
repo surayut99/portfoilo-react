@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 iframe {
@@ -14,5 +14,11 @@ iframe {
 }
 
 #about, #skills, #projects {
-  min-width: 100vh
+  min-height: 100vh
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    padding: 60px 5% 0 5%;
+  }
 }
