@@ -1,4 +1,4 @@
-const Axios = require("axios");
+import Axios from "axios";
 const { GIT_USERNAME } = require("../config");
 
 /**
